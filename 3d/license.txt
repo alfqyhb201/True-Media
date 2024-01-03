@@ -1,0 +1,11 @@
+Model Information:
+* title:	Business card/booklet holder
+* source:	https://sketchfab.com/3d-models/business-cardbooklet-holder-c9f8cc55a7e942e3bd1ff835deccf0a5
+* author:	ap3design (https://sketchfab.com/ap3design)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Business card/booklet holder" (https://sketchfab.com/3d-models/business-cardbooklet-holder-c9f8cc55a7e942e3bd1ff835deccf0a5) by ap3design (https://sketchfab.com/ap3design) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

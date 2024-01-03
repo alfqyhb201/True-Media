@@ -1,12 +1,31 @@
 /********** Template CSS **********/
 :root {
     --primary: #d37218;
-    /* --primary: #4294E3; */
-    /* --secondary: #b10909; */
+    --primary2: #4294E3;
+    --primary3: #4d148c;
+    --primary4: #ff6600;
     --secondary: #7e4209;
+    --secondary2: #510e94;
+    --secondary3: #2b0b4e;
+    --secondary4: #ff6600;
+    /* --secondary: #7e4209; */
     --light: #F0F6FF;
-    --dark: #262B47;
+    --dark: #4d148c;
+    /* --dark: #231e1e; */
+    --darktheme: #262B47;
+    --lighttheme: #AAAAAA;
 }
+
+body{
+    background-color: var(--light);
+}
+
+.container-xxl{
+    background: #FFFFFF;
+}
+
+
+
 
 
 /*** Spinner ***/
@@ -49,23 +68,29 @@ h5.about{
 
 /*** Gradient Text & BG ***/
 .text-primary-gradient {
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background: linear-gradient(to bottom right, var(--primary4), var(--secondary4));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .text-secondary-gradient {
-    background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+    background: linear-gradient(to bottom right, var(--secondary4), var(--primary4));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
+.card-title{
+    color: #FFFFFF;
+}
+
 .bg-primary-gradient {
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background: linear-gradient(to bottom right, var(--primary3), var(--secondary3));
+    /* background: linear-gradient(to bottom right, var(--primary), var(--secondary)); */
 }
 
 .bg-secondary-gradient {
-    background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+    background: linear-gradient(to bottom right, var(--primary3), var(--secondary3));
+    /* background: linear-gradient(to bottom right, var(--secondary), var(--primary)); */
 }
 
 
@@ -98,12 +123,14 @@ h5.about{
 
 .btn.btn-primary-gradient,
 .btn.btn-secondary-gradient::after {
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background: linear-gradient(to bottom right, var(--primary3), var(--secondary3));
+    /* background: linear-gradient(to bottom right, var(--primary), var(--secondary)); */
 }
 
 .btn.btn-secondary-gradient,
 .btn.btn-primary-gradient::after {
-    background: linear-gradient(to bottom right, var(--secondary), var(--primary));
+    background: linear-gradient(to bottom right, var(--secondary3), var(--primary3));
+    /* background: linear-gradient(to bottom right, var(--secondary), var(--primary)); */
 }
 
 .btn.btn-primary-gradient:hover::after,
@@ -144,8 +171,19 @@ h5.about{
     bottom: 45px;
     z-index: 99;
     border: none;
-    background: linear-gradient(to bottom right, var(--primary), var(--secondary));
+    background: linear-gradient(to bottom right, var(--primary4), var(--secondary4));
 }
+
+.sphere {
+    border-radius: 50%; /* to make it a circle */
+    background: 
+      radial-gradient(
+        circle at 30% 30%,
+        var(--primary4),
+        #774400
+      ); /* this is the radial gradient I was talking about */
+}
+
 
 
 /*** Navbar ***/
@@ -200,7 +238,8 @@ h5.about{
 @media (max-width: 991.98px) {
     .sticky-top.navbar-light {
         position: relative;
-        background: #FFFFFF;
+        /* background: #FFFFFF; */
+        background: #100909;
     }
 
     .navbar-light .navbar-collapse {
@@ -250,7 +289,7 @@ h5.about{
     }
 
     .sticky-top.navbar-light .navbar-nav .nav-link::before {
-        border-top-color: var(--primary);
+        border-top-color: var(--primary4);
     }
 
     .sticky-top.navbar-light .navbar-brand h1 {

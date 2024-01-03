@@ -31,10 +31,11 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/dark.css">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51" class="body">
-    <div class="container-xxl bg-white p-0">
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <div class="container-xxl p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
             <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
@@ -49,7 +50,7 @@
             <nav class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
                     <!-- <h1 class="m-0">FitApp</h1> -->
-                    <img src="img/logo2.svg" alt="Logo">
+                    <img src="img/logo2.svg" id="logo" alt="Logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -63,7 +64,7 @@
                         <a href="#review" class="nav-item nav-link">العملاء</a>
                         <a href="#contact" class="nav-item nav-link">اتصل بنا</a>
                     </div>
-                    <a href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block">تسجيل الدخول</a>
+                    <button href="" class="btn btn-primary-gradient rounded-pill py-2 px-4 ms-3 d-none d-lg-block" onclick="dark()"> <i class="fa fa-moon" id="mode"></i></button>
                 </div>
             </nav>
 
@@ -98,6 +99,9 @@
         <div class="container-xxl py-5" id="about">
             <div class="container py-5 px-lg-5">
                 <div class="row g-5 align-items-center">
+                    <div class="col-lg-6">
+                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/19-Types-of-Advertising-Design-Guide-Examples.webp">
+                    </div>
                     <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                         <h5 class="text-primary-gradient fw-medium about">عنا</h5>
                         <h1 class="mb-4">TRUE MEDIA ADVERTISING</h1>
@@ -124,9 +128,7 @@
                         </div>
                         <a href="" class="btn btn-primary-gradient py-sm-3 px-4 px-sm-5 rounded-pill mt-3">اقرأ أكثر</a>
                     </div>
-                    <div class="col-lg-6">
-                        <img class="img-fluid wow fadeInUp" data-wow-delay="0.5s" src="img/19-Types-of-Advertising-Design-Guide-Examples.webp">
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -137,7 +139,7 @@
         <div class="container-xxl py-5" id="feature">
             <div class="container py-5 px-lg-5">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h4 class="text-primary-gradient fw-medium">خدماتنا</h4>
+                    <h5 class="text-primary-gradient fw-medium about">خدماتنا</h5>
                     <h1 class="mb-5">خدماتنا تتجاوز الدعاية والإعلان</h1>
                 </div>
                 <div class="row g-4">
@@ -223,7 +225,7 @@
         <div class="container-xxl py-5" id="work">
             <div class="container py-5 px-lg-5">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="text-primary-gradient fw-medium">أعمالنا</h5>
+                    <h5 class="text-primary-gradient fw-medium about">أعمالنا</h5>
                     <h1 class="mb-5">الأعمال والمشاريع</h1>
                 </div>
                 <div class="tab-class text-center pricing wow fadeInUp" data-wow-delay="0.1s">
@@ -235,7 +237,7 @@
                                         <div class="card bg-dark text-white">
                                             <img src="./img/12735776_5073120.jpg" height="300" class="card-img" alt="...">
                                             <div class="card-img-overlay">
-                                              <h3 class="card-title text-white text-end">الكروت</h3>
+                                              <h3 class="card-title text-end">الكروت</h3>
                                               <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                               <p class="card-text">Last updated 3 mins ago</p> -->
                                             </div>
@@ -247,7 +249,7 @@
                                         <div class="card bg-dark text-white">
                                             <img src="./img/Advertising-coordinator-Business-Card-Design-1180x885.jpg" height="300" class="card-img" alt="...">
                                             <div class="card-img-overlay">
-                                              <h3 class="card-title text-white text-end">الكروت</h3>
+                                              <h3 class="card-title text-end">الكروت</h3>
                                               <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                               <p class="card-text">Last updated 3 mins ago</p> -->
                                             </div>
@@ -259,7 +261,7 @@
                                         <div class="card bg-dark text-white">
                                             <img src="./img/golden-logo-mockup-3d-sign-facade-Graphics-9544010-1.jpg" height="300" class="card-img" alt="...">
                                             <div class="card-img-overlay">
-                                              <h3 class="card-title text-white text-end">الكروت</h3>
+                                              <h3 class="card-title text-end">الكروت</h3>
                                               <!-- <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                               <p class="card-text">Last updated 3 mins ago</p> -->
                                             </div>
@@ -280,7 +282,7 @@
         <div class="container-xxl py-5" id="review">
             <div class="container py-5 px-lg-5">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="text-primary-gradient fw-medium">العملاء</h5>
+                    <h5 class="text-primary-gradient fw-medium about">العملاء</h5>
                     <h1 class="mb-5">عملاؤنا</h1>
                     <!-- <h1 class="mb-5">ماذا يقول عملائنا؟</h1> -->
                 </div>
@@ -312,77 +314,6 @@
                       <img src="./img/brands/4388298_2289113.jpg" class="w-100">
                     </div>
                 </div>
-                <!-- <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                    <div class="testimonial-item rounded p-4">
-                        <div class="d-flex align-items-center mb-4">
-                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-2.jpg" style="width: 85px; height: 85px;">
-                            <div class="ms-4">
-                                <h5 class="mb-1">Client Name</h5>
-                                <p class="mb-1">Profession</p>
-                                <div>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                    <div class="testimonial-item rounded p-4">
-                        <div class="d-flex align-items-center mb-4">
-                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-2.jpg" style="width: 85px; height: 85px;">
-                            <div class="ms-4">
-                                <h5 class="mb-1">Client Name</h5>
-                                <p class="mb-1">Profession</p>
-                                <div>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                    <div class="testimonial-item rounded p-4">
-                        <div class="d-flex align-items-center mb-4">
-                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-3.jpg" style="width: 85px; height: 85px;">
-                            <div class="ms-4">
-                                <h5 class="mb-1">Client Name</h5>
-                                <p class="mb-1">Profession</p>
-                                <div>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                    <div class="testimonial-item rounded p-4">
-                        <div class="d-flex align-items-center mb-4">
-                            <img class="img-fluid bg-white rounded flex-shrink-0 p-1" src="img/testimonial-3.jpg" style="width: 85px; height: 85px;">
-                            <div class="ms-4">
-                                <h5 class="mb-1">Client Name</h5>
-                                <p class="mb-1">Profession</p>
-                                <div>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                    <small class="fa fa-star text-warning"></small>
-                                </div>
-                            </div>
-                        </div>
-                        <p class="mb-0">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita erat ipsum et lorem et sit.</p>
-                    </div>
-                    
-                </div> -->
             </div>
         </div>
         <!-- Testimonial End -->
@@ -392,7 +323,7 @@
         <div class="container-xxl py-5" id="contact">
             <div class="container py-5 px-lg-5">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="text-primary-gradient fw-medium">اتصل بنا</h5>
+                    <h5 class="text-primary-gradient fw-medium about">اتصل بنا</h5>
                     <h1 class="mb-5">ابقى على تواصل!</h1>
                 </div>
                 <div class="row justify-content-center">
@@ -503,7 +434,7 @@
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2"><i class="bi bi-arrow-up text-white"></i></a>
+        <a href="#" class="btn btn-lg btn-lg-square back-to-top pt-2 sphere"><i class="bi bi-arrow-up text-white"></i></a>
     </div>
 
     <!-- JavaScript Libraries -->
@@ -517,8 +448,13 @@
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
+    <!-- 3D Three.js -->
+    <script src="./js/three.min.js"></script>
+    <script src="./js/GLTFLoader.js"></script>
+
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/theme.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,73 @@
+/*** Dark Theme ***/
+
+body.dark{
+    background-color: var(--darktheme);
+    
+}
+
+.sticky-top.navbar-light .navbar-nav .nav-link.dark{
+    color: var(--light) !important;
+}
+
+.hero-header.dark{
+    margin-bottom: 6rem;
+    padding: 16rem 0 0 0;
+    background:
+        url(../img/bg-circle.png),
+        url(../img/bg-triangle.png),
+        url(../img/bg-bottom.png),
+        linear-gradient(to bottom right, var(--dark), var(--darktheme));
+    background-position:
+        left 0px top 0px,
+        right 0px top 50%,
+        center bottom;
+    background-repeat: no-repeat;
+}
+
+.btn.btn-primary-gradient.dark,
+.btn.btn-secondary-gradient.dark::after {
+    background: linear-gradient(to bottom right, var(--primary4), var(--secondary4));
+}
+
+.btn.btn-secondary-gradient.dark,
+.btn.btn-primary-gradient.dark::after {
+    background: linear-gradient(to bottom right, var(--secondary4), var(--primary4));
+}
+
+.bg-primary-gradient.dark{
+    background: linear-gradient(to bottom right, var(--primary4), var(--secondary4));
+}
+
+.bg-secondary-gradient.dark{
+    background: linear-gradient(to bottom right, var(--primary4), var(--secondary4));
+}
+
+
+
+
+
+@media (min-width: 992px) {
+    .sticky-top.navbar-light.dark {
+        /* position: relative; */
+        background: var(--dark);
+    }
+
+}
+
+/*** Footer Dark ***/
+.footer.dark {
+    margin-top: 6rem;
+    padding-top: 9rem;
+    background:
+        url(../img/bg-circle.png),
+        url(../img/bg-triangle.png),
+        url(../img/wave.png),
+        /* url(../img/bg-top.png), */
+        linear-gradient(to bottom right, var(--primary3), var(--secondary3));
+    background-position:
+        left 0px bottom 0px,
+        right 0px top 50%,
+        center top;
+    background-repeat: no-repeat;
+    
+}
